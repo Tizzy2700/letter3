@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Love Letter</title>
+<style>
+
+    body {
+
+      margin: 0;
+
+      background-color: #ffc0cb; /* Pink background */
+
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+      color: #333;
+
+      min-height: 100vh;
+
+      display: flex;
+
+      flex-direction: column;
+
+      align-items: center;
+
+    }
+
+    .show-button {
+
+      background-color: #ff69b4;
+
+      color: white;
+
+      border: none;
+
+      padding: 14px 28px;
+
+      font-size: 16px;
+
+      border-radius: 30px;
+
+      cursor: pointer;
+
+      margin: 20px auto;
+
+      transition: background-color 0.3s ease;
+
+      position: sticky;
+
+      top: 0;
+
+      z-index: 10;
+
+    }
+
+    .show-button:hover {
+
+      background-color: #ff1493;
+
+    }
+
+    .letter-container {
+
+      background-color: #000000; /* Black background */
+
+      color: #ffc0cb; /* Pink text */
+
+      max-width: 90%;
+
+      width: 700px;
+
+      max-height: 80vh;
+
+      overflow-y: auto;
+
+      padding: 30px 40px;
+
+      margin: 20px;
+
+      border-radius: 12px;
+
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+
+      display: none;
+
+      opacity: 0;
+
+      transition: opacity 0.8s ease-in-out;
+
+    }
+
+    .letter-container.visible {
+
+      display: block;
+
+      opacity: 1;
+
+    }
+
+    h1 {
+
+      text-align: center;
+
+      color: #ff69b4;
+
+      font-size: 28px;
+
+      margin-bottom: 30px;
+
+    }
+
+    p {
+
+      font-size: 18px;
+
+      line-height: 1.8;
+
+      margin-bottom: 20px;
+
+    }
+
+    .emoji {
+
+      font-size: 24px;
+
+      text-align: center;
+
+    }
+</style>
+</head>
+<body>
+<button class="show-button" onclick="showLetter()">Click to Read the Letter 💌</button>
+<div class="letter-container" id="loveLetter">
+<h1>To Someone So Special</h1>
+<p>You really are the best thing that’s ever happened to me. I love everything about you your face, your smile, your personality… just you. In my eyes, you’re absolutely perfect.</p>
+<p>You mean so much to me. You’ve helped me grow into a better, brighter version of myself. I love you at your best, at your worst, and in every moment in between. I honestly feel like the luckiest person in the world just being with you.</p>
+<p>I love you more than I could ever fully put into words. I don’t even want to imagine life without you without your presence, your energy, your heart. You make me feel safe, like I can truly be myself around you.</p>
+<p>When you’re happy, it makes me even happier. I support you in everything you do your dreams, your struggles, your highs and lows. I want to be the person you can always come to, no matter what. Whether it’s something that’s bothering you or something you’re proud of, I want to hear it all.</p>
+<p>I think about you every second of the day. I love you so, so much.</p>
+<p class="emoji">❤️🤧</p>
+</div>
+<script>
+
+    function showLetter() {
+
+      const letter = document.getElementById('loveLetter');
+
+      letter.classList.add('visible');
+
+      letter.scrollIntoView({ behavior: 'smooth' });
+
+    }
+</script>
+</body>
+</html>
+ 
